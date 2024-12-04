@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>JS Practice</title>
+</head>
+
+<body>
+    <h1 id="h1-tag">HELLO WORLD</h1>
+    <button id="change-button" onclick="changeListType()">CHANGE</button>
+
+    <div class="articles">
+        <div class="project">
+            <span>project1</span>
+            <ul>
+                <li class="task1">article1</li>
+                <li class="task2">article2</li>
+                <li class="task3">article3</li>
+            </ul>
+        </div>
+        <div class="project">
+            <span>project2</span>
+            <ul>
+                <li class="task1">article4</li>
+                <li class="task2">article5</li>
+                <li class="task3">article6</li>
+            </ul>
+        </div>
+    </div>
+    <div class="journals">
+        <div class="journal">
+            <h2 class="journal-title">JournalTitle1</h2>
+            <h2 class="journal-title">JournalTitle2</h2>
+            <h2 class="journal-title">JournalTitle3</h2>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script th:src="@{/PracticeJS.js}"></script>
+</body>
+
+</html>
